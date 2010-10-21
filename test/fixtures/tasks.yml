@@ -1,0 +1,25 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  url: MyString
+  path: MyString
+  environment: MyString
+  class_name: MyString
+  record_id: 1
+  method: MyString
+  parameters: MyString
+  state: MyString
+  priority: 1
+  references: 
+
+two:
+  url: MyString
+  path: MyString
+  environment: MyString
+  class_name: MyString
+  record_id: 1
+  method: MyString
+  parameters: MyString
+  state: MyString
+  priority: 1
+  references: 

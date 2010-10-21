@@ -1,0 +1,41 @@
+<h1>Listing tasks</h1>
+
+<table>
+  <tr>
+    <th>Url</th>
+    <th>Path</th>
+    <th>Environment</th>
+    <th>Class name</th>
+    <th>Record</th>
+    <th>Method</th>
+    <th>Parameters</th>
+    <th>State</th>
+    <th>Priority</th>
+    <th>References</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @tasks.each do |task| %>
+  <tr>
+    <td><%= task.url %></td>
+    <td><%= task.path %></td>
+    <td><%= task.environment %></td>
+    <td><%= task.class_name %></td>
+    <td><%= task.record_id %></td>
+    <td><%= task.method %></td>
+    <td><%= task.parameters %></td>
+    <td><%= task.state %></td>
+    <td><%= task.priority %></td>
+    <td><%= task.references %></td>
+    <td><%= link_to 'Show', task %></td>
+    <td><%= link_to 'Edit', edit_task_path(task) %></td>
+    <td><%= link_to 'Destroy', task, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Task', new_task_path %>

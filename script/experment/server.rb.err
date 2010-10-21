@@ -1,0 +1,4 @@
+./server.rb:52:in `bind': getaddrinfo: Name or service not known (SocketError)
+	from ./server.rb:52:in `initialize'
+	from ./server.rb:81:in `new'
+	from ./server.rb:81

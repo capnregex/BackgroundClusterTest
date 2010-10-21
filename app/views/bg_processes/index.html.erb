@@ -1,0 +1,29 @@
+<h1>Listing bg_processes</h1>
+
+<table>
+  <tr>
+    <th>Host</th>
+    <th>Port</th>
+    <th>Pid</th>
+    <th>State</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @bg_processes.each do |bg_process| %>
+  <tr>
+    <td><%= bg_process.host %></td>
+    <td><%= bg_process.port %></td>
+    <td><%= bg_process.pid %></td>
+    <td><%= bg_process.state %></td>
+    <td><%= link_to 'Show', bg_process %></td>
+    <td><%= link_to 'Edit', edit_bg_process_path(bg_process) %></td>
+    <td><%= link_to 'Destroy', bg_process, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Bg process', new_bg_process_path %>

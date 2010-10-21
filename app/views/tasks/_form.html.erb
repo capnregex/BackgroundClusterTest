@@ -1,0 +1,57 @@
+<%= form_for(@task) do |f| %>
+  <% if @task.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@task.errors.count, "error") %> prohibited this task from being saved:</h2>
+
+      <ul>
+      <% @task.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :url %><br />
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
+    <%= f.label :path %><br />
+    <%= f.text_field :path %>
+  </div>
+  <div class="field">
+    <%= f.label :environment %><br />
+    <%= f.text_field :environment %>
+  </div>
+  <div class="field">
+    <%= f.label :class_name %><br />
+    <%= f.text_field :class_name %>
+  </div>
+  <div class="field">
+    <%= f.label :record_id %><br />
+    <%= f.text_field :record_id %>
+  </div>
+  <div class="field">
+    <%= f.label :method %><br />
+    <%= f.text_field :method %>
+  </div>
+  <div class="field">
+    <%= f.label :parameters %><br />
+    <%= f.text_field :parameters %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :priority %><br />
+    <%= f.text_field :priority %>
+  </div>
+  <div class="field">
+    <%= f.label :references %><br />
+    <%= f.text_field :references %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Host:</b>
+  <%= @bg_process.host %>
+</p>
+
+<p>
+  <b>Port:</b>
+  <%= @bg_process.port %>
+</p>
+
+<p>
+  <b>Pid:</b>
+  <%= @bg_process.pid %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @bg_process.state %>
+</p>
+
+
+<%= link_to 'Edit', edit_bg_process_path(@bg_process) %> |
+<%= link_to 'Back', bg_processes_path %>

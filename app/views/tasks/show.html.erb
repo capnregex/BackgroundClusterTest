@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @task.url %>
+</p>
+
+<p>
+  <b>Path:</b>
+  <%= @task.path %>
+</p>
+
+<p>
+  <b>Environment:</b>
+  <%= @task.environment %>
+</p>
+
+<p>
+  <b>Class name:</b>
+  <%= @task.class_name %>
+</p>
+
+<p>
+  <b>Record:</b>
+  <%= @task.record_id %>
+</p>
+
+<p>
+  <b>Method:</b>
+  <%= @task.method %>
+</p>
+
+<p>
+  <b>Parameters:</b>
+  <%= @task.parameters %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @task.state %>
+</p>
+
+<p>
+  <b>Priority:</b>
+  <%= @task.priority %>
+</p>
+
+<p>
+  <b>References:</b>
+  <%= @task.references %>
+</p>
+
+
+<%= link_to 'Edit', edit_task_path(@task) %> |
+<%= link_to 'Back', tasks_path %>

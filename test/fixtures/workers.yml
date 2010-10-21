@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  af: MyString
+  port: 1
+  host: MyString
+  addr: MyString
+  state: MyString
+  task: 
+
+two:
+  af: MyString
+  port: 1
+  host: MyString
+  addr: MyString
+  state: MyString
+  task: 

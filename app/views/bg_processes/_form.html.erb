@@ -1,0 +1,33 @@
+<%= form_for(@bg_process) do |f| %>
+  <% if @bg_process.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bg_process.errors.count, "error") %> prohibited this bg_process from being saved:</h2>
+
+      <ul>
+      <% @bg_process.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :host %><br />
+    <%= f.text_field :host %>
+  </div>
+  <div class="field">
+    <%= f.label :port %><br />
+    <%= f.text_field :port %>
+  </div>
+  <div class="field">
+    <%= f.label :pid %><br />
+    <%= f.text_field :pid %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

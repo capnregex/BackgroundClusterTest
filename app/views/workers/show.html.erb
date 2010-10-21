@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Af:</b>
+  <%= @worker.af %>
+</p>
+
+<p>
+  <b>Port:</b>
+  <%= @worker.port %>
+</p>
+
+<p>
+  <b>Host:</b>
+  <%= @worker.host %>
+</p>
+
+<p>
+  <b>Addr:</b>
+  <%= @worker.addr %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @worker.state %>
+</p>
+
+<p>
+  <b>Task:</b>
+  <%= @worker.task %>
+</p>
+
+
+<%= link_to 'Edit', edit_worker_path(@worker) %> |
+<%= link_to 'Back', workers_path %>
